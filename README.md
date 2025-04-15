@@ -17,7 +17,9 @@ The basic framework used in this experiment is based on **PFLlib**(https://www.p
 
 The file has already stored datasets under different data distributions.
 To run the experiment, use the following command:
+```bash
 # In ./system
+python main1.py -data OrganAMNIST_0.1 -m CNN -algo Local -gr 100 -lr 0.001 -ncl 11 -dev cuda -did 0,1   # using OrganAMNIST dataset
 python main1.py -data OrganAMNIST_0.1 -m CNN -algo Local -gr 100 -lr 0.001 -ncl 11 -dev cuda -did 0,1   # using OrganAMNIST dataset
 
 Alternatively, you can directly write the experiments you want to run in the sh1-1.py file in the format described above, and execute the file to perform the multi-threaded experiments.
